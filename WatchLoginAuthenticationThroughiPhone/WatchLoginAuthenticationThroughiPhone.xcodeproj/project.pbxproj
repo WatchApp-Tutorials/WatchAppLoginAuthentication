@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96F62E8A648F97985A718BD4 /* Pods_WatchLoginAuthenticationThroughiPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC1851C32BD134108AB47F4 /* Pods_WatchLoginAuthenticationThroughiPhone.framework */; };
+		DB0B5B20FB9EF5C0BDC77A7C /* Pods_WatchApp_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80874401D391FC1923226B1 /* Pods_WatchApp_Extension.framework */; };
+		EC21679B1C88431B00D9E657 /* LoginInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC21679A1C88431B00D9E657 /* LoginInterfaceController.swift */; };
+		ECA85A2F1C7DBBB7006D64EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA85A2E1C7DBBB7006D64EF /* AppDelegate.swift */; };
+		ECA85A311C7DBBB7006D64EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA85A301C7DBBB7006D64EF /* ViewController.swift */; };
+		ECA85A341C7DBBB7006D64EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA85A321C7DBBB7006D64EF /* Main.storyboard */; };
+		ECA85A361C7DBBB7006D64EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA85A351C7DBBB7006D64EF /* Assets.xcassets */; };
+		ECA85A391C7DBBB7006D64EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA85A371C7DBBB7006D64EF /* LaunchScreen.storyboard */; };
+		ECA85A461C7DBD14006D64EF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA85A441C7DBD14006D64EF /* Interface.storyboard */; };
+		ECA85A481C7DBD15006D64EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA85A471C7DBD15006D64EF /* Assets.xcassets */; };
+		ECA85A4F1C7DBD15006D64EF /* WatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ECA85A4E1C7DBD15006D64EF /* WatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ECA85A561C7DBD15006D64EF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA85A551C7DBD15006D64EF /* InterfaceController.swift */; };
+		ECA85A581C7DBD15006D64EF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA85A571C7DBD15006D64EF /* ExtensionDelegate.swift */; };
+		ECA85A5A1C7DBD15006D64EF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA85A591C7DBD15006D64EF /* NotificationController.swift */; };
+		ECA85A5C1C7DBD15006D64EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA85A5B1C7DBD15006D64EF /* Assets.xcassets */; };
+		ECA85A601C7DBD15006D64EF /* WatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ECA85A421C7DBD14006D64EF /* WatchApp.app */; };
+		ECA85A6A1C7DC242006D64EF /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA85A691C7DC242006D64EF /* LoginService.swift */; };
+		ECA85A6C1C7DC27E006D64EF /* helperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA85A6B1C7DC27E006D64EF /* helperClass.swift */; };
+		ECA85A6E1C7DC399006D64EF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA85A6D1C7DC399006D64EF /* Constants.swift */; };
+		ECA85A701C7DC658006D64EF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA85A6F1C7DC658006D64EF /* MainViewController.swift */; };
+		ECA85A721C7DC95F006D64EF /* PendingJobList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA85A711C7DC95F006D64EF /* PendingJobList.swift */; };
+		ECA85A731C7DCA5E006D64EF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA85A6D1C7DC399006D64EF /* Constants.swift */; };
+		ECA85A741C7DCA63006D64EF /* helperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA85A6B1C7DC27E006D64EF /* helperClass.swift */; };
+		ECA85A761C7DCA8B006D64EF /* PendingJobService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA85A751C7DCA8B006D64EF /* PendingJobService.swift */; };
+		ECB55B8C1C86AF0A007AA858 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB55B8A1C86AF0A007AA858 /* Alamofire.framework */; };
+		ECB55B8D1C86AF0A007AA858 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB55B8B1C86AF0A007AA858 /* SwiftyJSON.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECA85A501C7DBD15006D64EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECA85A231C7DBBB7006D64EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECA85A4D1C7DBD15006D64EF;
+			remoteInfo = "WatchApp Extension";
+		};
+		ECA85A5E1C7DBD15006D64EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECA85A231C7DBBB7006D64EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECA85A411C7DBD14006D64EF;
+			remoteInfo = WatchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ECA85A661C7DBD15006D64EF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ECA85A4F1C7DBD15006D64EF /* WatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA85A681C7DBD15006D64EF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				ECA85A601C7DBD15006D64EF /* WatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		24803529C8D8AA2F119D346D /* Pods-WatchLoginAuthenticationThroughiPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchLoginAuthenticationThroughiPhone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchLoginAuthenticationThroughiPhone/Pods-WatchLoginAuthenticationThroughiPhone.debug.xcconfig"; sourceTree = "<group>"; };
+		2F4519C1117BA91EA7CA4D8C /* Pods-WatchApp Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchApp Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchApp Extension/Pods-WatchApp Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		4906966454E2B6771FECEC1E /* Pods-WatchLoginAuthenticationThroughiPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchLoginAuthenticationThroughiPhone.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchLoginAuthenticationThroughiPhone/Pods-WatchLoginAuthenticationThroughiPhone.release.xcconfig"; sourceTree = "<group>"; };
+		7383C30E927A30C1245A3409 /* Pods-WatchApp Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchApp Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchApp Extension/Pods-WatchApp Extension.release.xcconfig"; sourceTree = "<group>"; };
+		A80874401D391FC1923226B1 /* Pods_WatchApp_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchApp_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC1851C32BD134108AB47F4 /* Pods_WatchLoginAuthenticationThroughiPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchLoginAuthenticationThroughiPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC21679A1C88431B00D9E657 /* LoginInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInterfaceController.swift; sourceTree = "<group>"; };
+		ECA85A2B1C7DBBB7006D64EF /* WatchLoginAuthenticationThroughiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchLoginAuthenticationThroughiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA85A2E1C7DBBB7006D64EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECA85A301C7DBBB7006D64EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECA85A331C7DBBB7006D64EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECA85A351C7DBBB7006D64EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECA85A381C7DBBB7006D64EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECA85A3A1C7DBBB7006D64EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA85A421C7DBD14006D64EF /* WatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA85A451C7DBD14006D64EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		ECA85A471C7DBD15006D64EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECA85A491C7DBD15006D64EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA85A4E1C7DBD15006D64EF /* WatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA85A541C7DBD15006D64EF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		ECA85A551C7DBD15006D64EF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		ECA85A571C7DBD15006D64EF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		ECA85A591C7DBD15006D64EF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		ECA85A5B1C7DBD15006D64EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECA85A5D1C7DBD15006D64EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA85A691C7DC242006D64EF /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		ECA85A6B1C7DC27E006D64EF /* helperClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = helperClass.swift; sourceTree = "<group>"; };
+		ECA85A6D1C7DC399006D64EF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ECA85A6F1C7DC658006D64EF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ECA85A711C7DC95F006D64EF /* PendingJobList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingJobList.swift; sourceTree = "<group>"; };
+		ECA85A751C7DCA8B006D64EF /* PendingJobService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingJobService.swift; sourceTree = "<group>"; };
+		ECB55B8A1C86AF0A007AA858 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Pods-WatchLoginAuthenticationThroughiPhone/Alamofire.framework"; sourceTree = "<group>"; };
+		ECB55B8B1C86AF0A007AA858 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/Pods-WatchLoginAuthenticationThroughiPhone/SwiftyJSON.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECA85A281C7DBBB7006D64EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB55B8C1C86AF0A007AA858 /* Alamofire.framework in Frameworks */,
+				ECB55B8D1C86AF0A007AA858 /* SwiftyJSON.framework in Frameworks */,
+				96F62E8A648F97985A718BD4 /* Pods_WatchLoginAuthenticationThroughiPhone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA85A4B1C7DBD15006D64EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0B5B20FB9EF5C0BDC77A7C /* Pods_WatchApp_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		050C680D8CDD4823BFCA7ADA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECB55B8A1C86AF0A007AA858 /* Alamofire.framework */,
+				ECB55B8B1C86AF0A007AA858 /* SwiftyJSON.framework */,
+				A80874401D391FC1923226B1 /* Pods_WatchApp_Extension.framework */,
+				CEC1851C32BD134108AB47F4 /* Pods_WatchLoginAuthenticationThroughiPhone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D213D6F7ED5849CC8FDE03F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F4519C1117BA91EA7CA4D8C /* Pods-WatchApp Extension.debug.xcconfig */,
+				7383C30E927A30C1245A3409 /* Pods-WatchApp Extension.release.xcconfig */,
+				24803529C8D8AA2F119D346D /* Pods-WatchLoginAuthenticationThroughiPhone.debug.xcconfig */,
+				4906966454E2B6771FECEC1E /* Pods-WatchLoginAuthenticationThroughiPhone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ECA85A221C7DBBB7006D64EF = {
+			isa = PBXGroup;
+			children = (
+				ECA85A2D1C7DBBB7006D64EF /* WatchLoginAuthenticationThroughiPhone */,
+				ECA85A431C7DBD14006D64EF /* WatchApp */,
+				ECA85A521C7DBD15006D64EF /* WatchApp Extension */,
+				ECA85A2C1C7DBBB7006D64EF /* Products */,
+				0D213D6F7ED5849CC8FDE03F /* Pods */,
+				050C680D8CDD4823BFCA7ADA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ECA85A2C1C7DBBB7006D64EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECA85A2B1C7DBBB7006D64EF /* WatchLoginAuthenticationThroughiPhone.app */,
+				ECA85A421C7DBD14006D64EF /* WatchApp.app */,
+				ECA85A4E1C7DBD15006D64EF /* WatchApp Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECA85A2D1C7DBBB7006D64EF /* WatchLoginAuthenticationThroughiPhone */ = {
+			isa = PBXGroup;
+			children = (
+				ECA85A2E1C7DBBB7006D64EF /* AppDelegate.swift */,
+				ECA85A301C7DBBB7006D64EF /* ViewController.swift */,
+				ECA85A321C7DBBB7006D64EF /* Main.storyboard */,
+				ECA85A351C7DBBB7006D64EF /* Assets.xcassets */,
+				ECA85A371C7DBBB7006D64EF /* LaunchScreen.storyboard */,
+				ECA85A3A1C7DBBB7006D64EF /* Info.plist */,
+				ECA85A691C7DC242006D64EF /* LoginService.swift */,
+				ECA85A6B1C7DC27E006D64EF /* helperClass.swift */,
+				ECA85A6D1C7DC399006D64EF /* Constants.swift */,
+				ECA85A6F1C7DC658006D64EF /* MainViewController.swift */,
+			);
+			path = WatchLoginAuthenticationThroughiPhone;
+			sourceTree = "<group>";
+		};
+		ECA85A431C7DBD14006D64EF /* WatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				ECA85A441C7DBD14006D64EF /* Interface.storyboard */,
+				ECA85A471C7DBD15006D64EF /* Assets.xcassets */,
+				ECA85A491C7DBD15006D64EF /* Info.plist */,
+			);
+			path = WatchApp;
+			sourceTree = "<group>";
+		};
+		ECA85A521C7DBD15006D64EF /* WatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ECA85A551C7DBD15006D64EF /* InterfaceController.swift */,
+				ECA85A571C7DBD15006D64EF /* ExtensionDelegate.swift */,
+				ECA85A591C7DBD15006D64EF /* NotificationController.swift */,
+				ECA85A5B1C7DBD15006D64EF /* Assets.xcassets */,
+				ECA85A5D1C7DBD15006D64EF /* Info.plist */,
+				ECA85A531C7DBD15006D64EF /* Supporting Files */,
+				ECA85A711C7DC95F006D64EF /* PendingJobList.swift */,
+				ECA85A751C7DCA8B006D64EF /* PendingJobService.swift */,
+				EC21679A1C88431B00D9E657 /* LoginInterfaceController.swift */,
+			);
+			path = "WatchApp Extension";
+			sourceTree = "<group>";
+		};
+		ECA85A531C7DBD15006D64EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECA85A541C7DBD15006D64EF /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECA85A2A1C7DBBB7006D64EF /* WatchLoginAuthenticationThroughiPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA85A3D1C7DBBB7006D64EF /* Build configuration list for PBXNativeTarget "WatchLoginAuthenticationThroughiPhone" */;
+			buildPhases = (
+				82BDA4DD1562ACDFCF5522D5 /* Check Pods Manifest.lock */,
+				ECA85A271C7DBBB7006D64EF /* Sources */,
+				ECA85A281C7DBBB7006D64EF /* Frameworks */,
+				ECA85A291C7DBBB7006D64EF /* Resources */,
+				ECA85A681C7DBD15006D64EF /* Embed Watch Content */,
+				FF89A82801DACDB612B31415 /* Embed Pods Frameworks */,
+				A4549B73772A5702D06C1474 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA85A5F1C7DBD15006D64EF /* PBXTargetDependency */,
+			);
+			name = WatchLoginAuthenticationThroughiPhone;
+			productName = WatchLoginAuthenticationThroughiPhone;
+			productReference = ECA85A2B1C7DBBB7006D64EF /* WatchLoginAuthenticationThroughiPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECA85A411C7DBD14006D64EF /* WatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA85A671C7DBD15006D64EF /* Build configuration list for PBXNativeTarget "WatchApp" */;
+			buildPhases = (
+				ECA85A401C7DBD14006D64EF /* Resources */,
+				ECA85A661C7DBD15006D64EF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA85A511C7DBD15006D64EF /* PBXTargetDependency */,
+			);
+			name = WatchApp;
+			productName = WatchApp;
+			productReference = ECA85A421C7DBD14006D64EF /* WatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		ECA85A4D1C7DBD15006D64EF /* WatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA85A651C7DBD15006D64EF /* Build configuration list for PBXNativeTarget "WatchApp Extension" */;
+			buildPhases = (
+				C86ED8FBCC198D69D4D25609 /* Check Pods Manifest.lock */,
+				ECA85A4A1C7DBD15006D64EF /* Sources */,
+				ECA85A4B1C7DBD15006D64EF /* Frameworks */,
+				ECA85A4C1C7DBD15006D64EF /* Resources */,
+				499C87C1006B8212891DC90A /* Embed Pods Frameworks */,
+				BFAD091EE41FC26FF3D70E51 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchApp Extension";
+			productName = "WatchApp Extension";
+			productReference = ECA85A4E1C7DBD15006D64EF /* WatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECA85A231C7DBBB7006D64EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Yogesh Bharate";
+				TargetAttributes = {
+					ECA85A2A1C7DBBB7006D64EF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					ECA85A411C7DBD14006D64EF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					ECA85A4D1C7DBD15006D64EF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = ECA85A261C7DBBB7006D64EF /* Build configuration list for PBXProject "WatchLoginAuthenticationThroughiPhone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECA85A221C7DBBB7006D64EF;
+			productRefGroup = ECA85A2C1C7DBBB7006D64EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECA85A2A1C7DBBB7006D64EF /* WatchLoginAuthenticationThroughiPhone */,
+				ECA85A411C7DBD14006D64EF /* WatchApp */,
+				ECA85A4D1C7DBD15006D64EF /* WatchApp Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECA85A291C7DBBB7006D64EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA85A391C7DBBB7006D64EF /* LaunchScreen.storyboard in Resources */,
+				ECA85A361C7DBBB7006D64EF /* Assets.xcassets in Resources */,
+				ECA85A341C7DBBB7006D64EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA85A401C7DBD14006D64EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA85A481C7DBD15006D64EF /* Assets.xcassets in Resources */,
+				ECA85A461C7DBD14006D64EF /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA85A4C1C7DBD15006D64EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA85A5C1C7DBD15006D64EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		499C87C1006B8212891DC90A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchApp Extension/Pods-WatchApp Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82BDA4DD1562ACDFCF5522D5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A4549B73772A5702D06C1474 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchLoginAuthenticationThroughiPhone/Pods-WatchLoginAuthenticationThroughiPhone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFAD091EE41FC26FF3D70E51 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchApp Extension/Pods-WatchApp Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C86ED8FBCC198D69D4D25609 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF89A82801DACDB612B31415 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchLoginAuthenticationThroughiPhone/Pods-WatchLoginAuthenticationThroughiPhone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECA85A271C7DBBB7006D64EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA85A6E1C7DC399006D64EF /* Constants.swift in Sources */,
+				ECA85A311C7DBBB7006D64EF /* ViewController.swift in Sources */,
+				ECA85A6A1C7DC242006D64EF /* LoginService.swift in Sources */,
+				ECA85A701C7DC658006D64EF /* MainViewController.swift in Sources */,
+				ECA85A6C1C7DC27E006D64EF /* helperClass.swift in Sources */,
+				ECA85A2F1C7DBBB7006D64EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA85A4A1C7DBD15006D64EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA85A731C7DCA5E006D64EF /* Constants.swift in Sources */,
+				ECA85A5A1C7DBD15006D64EF /* NotificationController.swift in Sources */,
+				ECA85A581C7DBD15006D64EF /* ExtensionDelegate.swift in Sources */,
+				ECA85A761C7DCA8B006D64EF /* PendingJobService.swift in Sources */,
+				ECA85A561C7DBD15006D64EF /* InterfaceController.swift in Sources */,
+				ECA85A741C7DCA63006D64EF /* helperClass.swift in Sources */,
+				ECA85A721C7DC95F006D64EF /* PendingJobList.swift in Sources */,
+				EC21679B1C88431B00D9E657 /* LoginInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECA85A511C7DBD15006D64EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECA85A4D1C7DBD15006D64EF /* WatchApp Extension */;
+			targetProxy = ECA85A501C7DBD15006D64EF /* PBXContainerItemProxy */;
+		};
+		ECA85A5F1C7DBD15006D64EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECA85A411C7DBD14006D64EF /* WatchApp */;
+			targetProxy = ECA85A5E1C7DBD15006D64EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECA85A321C7DBBB7006D64EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA85A331C7DBBB7006D64EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECA85A371C7DBBB7006D64EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA85A381C7DBBB7006D64EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ECA85A441C7DBD14006D64EF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA85A451C7DBD14006D64EF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECA85A3B1C7DBBB7006D64EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECA85A3C1C7DBBB7006D64EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECA85A3E1C7DBBB7006D64EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24803529C8D8AA2F119D346D /* Pods-WatchLoginAuthenticationThroughiPhone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods-WatchLoginAuthenticationThroughiPhone",
+				);
+				INFOPLIST_FILE = WatchLoginAuthenticationThroughiPhone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = synerzip.WatchLoginAuthenticationThroughiPhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECA85A3F1C7DBBB7006D64EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4906966454E2B6771FECEC1E /* Pods-WatchLoginAuthenticationThroughiPhone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods-WatchLoginAuthenticationThroughiPhone",
+				);
+				INFOPLIST_FILE = WatchLoginAuthenticationThroughiPhone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = synerzip.WatchLoginAuthenticationThroughiPhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ECA85A611C7DBD15006D64EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchApp_Extension;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = synerzip.WatchLoginAuthenticationThroughiPhone.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		ECA85A621C7DBD15006D64EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchApp_Extension;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = synerzip.WatchLoginAuthenticationThroughiPhone.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		ECA85A631C7DBD15006D64EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4519C1117BA91EA7CA4D8C /* Pods-WatchApp Extension.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = synerzip.WatchLoginAuthenticationThroughiPhone.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		ECA85A641C7DBD15006D64EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7383C30E927A30C1245A3409 /* Pods-WatchApp Extension.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = synerzip.WatchLoginAuthenticationThroughiPhone.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECA85A261C7DBBB7006D64EF /* Build configuration list for PBXProject "WatchLoginAuthenticationThroughiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA85A3B1C7DBBB7006D64EF /* Debug */,
+				ECA85A3C1C7DBBB7006D64EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA85A3D1C7DBBB7006D64EF /* Build configuration list for PBXNativeTarget "WatchLoginAuthenticationThroughiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA85A3E1C7DBBB7006D64EF /* Debug */,
+				ECA85A3F1C7DBBB7006D64EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA85A651C7DBD15006D64EF /* Build configuration list for PBXNativeTarget "WatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA85A631C7DBD15006D64EF /* Debug */,
+				ECA85A641C7DBD15006D64EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA85A671C7DBD15006D64EF /* Build configuration list for PBXNativeTarget "WatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA85A611C7DBD15006D64EF /* Debug */,
+				ECA85A621C7DBD15006D64EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECA85A231C7DBBB7006D64EF /* Project object */;
+}

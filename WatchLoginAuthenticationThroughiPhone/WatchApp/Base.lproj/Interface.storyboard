@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--LoginView-->
+        <scene sceneID="y3G-x7-ylA">
+            <objects>
+                <controller identifier="LoginView" id="Bvw-xl-AP5">
+                    <items>
+                        <label width="136" alignment="left" text="Please Login through iPhone App." textAlignment="center" numberOfLines="3" id="JWx-6f-R2V">
+                            <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="224" y="331"/>
+        </scene>
+        <!--MainView-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="MainView" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="4qF-uF-EaE" userLabel="Login">
+                            <items>
+                                <label width="122.5" alignment="left" text="Pune Plumbers" id="d3W-YX-8kx">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                </label>
+                                <imageView alignment="center" image="LockiPhone" id="lph-qX-3Wh"/>
+                                <label alignment="center" text="Please log into Pune Plumbers on your iPhone" numberOfLines="3" id="O0M-gK-A6d">
+                                    <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <button width="1" alignment="center" verticalAlignment="center" title="Retry Again" id="dym-9h-Bko">
+                                    <connections>
+                                        <action selector="RetryAgain" destination="AgC-eL-Hgc" id="bXG-jS-W37"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="wsl-xI-SDc" userLabel="PendingJobListGroup">
+                            <items>
+                                <table alignment="left" id="yPC-xq-799" userLabel="PendingJobList">
+                                    <items>
+                                        <tableRow identifier="PendingJobList" id="azK-zr-tc6" userLabel="PendingJob" customClass="PendingJobList" customModule="WatchApp_Extension">
+                                            <group key="rootItem" width="1" alignment="left" id="7EM-hZ-LZt">
+                                                <items>
+                                                    <label alignment="center" verticalAlignment="center" text="Yogesh Bharate" textAlignment="center" id="dPr-5S-fcH"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="customerName" destination="dPr-5S-fcH" id="Dve-dk-Rgu"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="loginGroup" destination="4qF-uF-EaE" id="HdI-oI-XkO"/>
+                        <outlet property="pendingJobListGroup" destination="wsl-xI-SDc" id="l36-sq-83q"/>
+                        <outlet property="pendingJobs" destination="yPC-xq-799" id="AVS-AK-LGM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="457" y="330"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WatchApp" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
